@@ -7,7 +7,7 @@ import operator
 
 directory = os.getcwd()
 
-file = open(directory + '/NewsDataset/HarvardNewsTweets/dataverse_files/articles.json')
+file = open(directory + '/../data/HarvardNewsTweets/dataverse_files/articles.json')
 data = json.load(file)
 file.close()
 
@@ -42,7 +42,7 @@ for i in range(len(news_media)):
         articles_per_category = min(articles_per_category, news_category_dist[i][categories[j]])
 
 def save_file(data, filename):
-    file = open(directory + '/NewsDataset/' + filename + '.csv', 'w', newline='')
+    file = open(directory + '/../data/' + filename + '.csv', 'w', newline='')
     writer = csv.writer(file, delimiter=",")
     writer.writerows(data)
     file.close()
