@@ -1,0 +1,4 @@
+snscrape
+scikit-learn
+pandas
+numpy

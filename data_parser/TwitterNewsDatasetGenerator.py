@@ -12,7 +12,7 @@ date_period = 'since:2015-12-01 until:2022-09-20'
 tweet_count_per_topic = 740
 
 def save_file(data, filename):
-    file = open(directory + '/NewsDataset/' + filename + '.csv', 'w', newline='')
+    file = open(directory + '/../data/' + filename + '.csv', 'w', newline='')
     writer = csv.writer(file, delimiter=",")
     writer.writerows(data)
     file.close()
