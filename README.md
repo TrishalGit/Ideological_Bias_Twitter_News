@@ -11,6 +11,14 @@
  - This will generate 3 files in 'data/pre_processed' directory: FoxNews.csv, CNN.csv, and NewsNation.csv.
  - The execution of the file can take approximately 12 hrs to generate 4440 tweets data from 3 news media sources.
  - If you want to increase the dataset size change the parameter on #line 12, to increase per category data.
+ 
+### Dataset 2 (Harvard News)
+ - Download the dataset zip file from this url [link](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/5XRZLH)
+ - Unzip the HarvardNewsTweets and HarvardNewsTweets/dataverse_files and move to 'data' folder.
+ - Execute the below command in 'data_parser' directory
+> python3 HarvardNewsDataParser.py
+ 
+### Train Test Split
  - To process to train test file split execute the below command in 'data_parser' directory
 > python3 TrainTestDataProcessor.py
- - This will generate 6 files in 'data/train_test_split' directory: Left_Train.csv, Left_Train.csv, Right_Train.csv, Right_Test.csv, Neutral_Train.csv, Neutral_Test.csv, 
+ - This will generate 12 files in 'data/train_test_split' directory: Left_Train.csv, Left_Train.csv, Right_Train.csv, Right_Test.csv, Neutral_Train.csv, Neutral_Test.csv, Left_Harvard_Train.csv, Left_Harvard_Train.csv, Right_Harvard_Train.csv, Right_Harvard_Test.csv, Neutral_Harvard_Train.csv, and Neutral_Harvard_Test.csv. 
