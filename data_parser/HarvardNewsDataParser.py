@@ -42,7 +42,7 @@ for i in range(len(news_media)):
         articles_per_category = min(articles_per_category, news_category_dist[i][categories[j]])
 
 def save_file(data, filename):
-    file = open(directory + '/../data/' + filename + '.csv', 'w', newline='')
+    file = open(directory + '/../data/pre_processed/' + filename + '.csv', 'w', newline='')
     writer = csv.writer(file, delimiter=",")
     writer.writerows(data)
     file.close()
