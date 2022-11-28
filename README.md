@@ -3,6 +3,12 @@
  - We have used Python 3 for execution of all our models except for BERT we used Google Collab for pre-installed tenserflow libraries
  - To install other libraries required by the project run the below command in the project directory:-
 > pip3 install -r requirements.txt
+ - For FastText install through below commands
+```
+$ git clone https://github.com/facebookresearch/fastText.git
+$ cd fastText
+$ pip install .
+```
 
 ## Dataset Generation
 ### Dataset 1 (Twitter News)
@@ -12,7 +18,7 @@
  - The execution of the file can take approximately 12 hrs to generate 4440 tweets data from 3 news media sources.
  - If you want to increase the dataset size change the parameter on #line 12, to increase per category data.
  
-### Dataset 2 (Harvard News)
+### Dataset 1 (Harvard News)
  - Download the dataset zip file from this url [link](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/5XRZLH)
  - Unzip the HarvardNewsTweets and HarvardNewsTweets/dataverse_files and move to 'data' folder.
  - Execute the below command in 'data_parser' directory
