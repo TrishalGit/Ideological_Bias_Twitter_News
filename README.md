@@ -17,8 +17,30 @@
  - Unzip the HarvardNewsTweets and HarvardNewsTweets/dataverse_files and move to 'data' folder.
  - Execute the below command in 'data_parser' directory
 > python3 HarvardNewsDataParser.py
+ - This will generate 3 files in 'data/pre_processed' directory: FoxNewsHarvard.csv, CNNHarvard.csv, and WSJHarvard.csv.
  
 ### Train Test Split
  - To process to train test file split execute the below command in 'data_parser' directory
 > python3 TrainTestDataProcessor.py
  - This will generate 12 files in 'data/train_test_split' directory: Left_Train.csv, Left_Train.csv, Right_Train.csv, Right_Test.csv, Neutral_Train.csv, Neutral_Test.csv, Left_Harvard_Train.csv, Left_Harvard_Train.csv, Right_Harvard_Train.csv, Right_Harvard_Test.csv, Neutral_Harvard_Train.csv, and Neutral_Harvard_Test.csv. 
+ 
+## Model Executions
+### Naive Bayes
+### SVM
+### KNN
+ - Comment out or Uncomment the lines #12-17 based on the data set.
+ - Execute the command in 'models' directory
+> python3 KNN.py
+### Random Forest
+ - Comment out or Uncomment the lines #12-17 based on the data set.
+ - Execute the command in 'models' directory
+> python3 RandomForest.py
+### Decision Tree
+ - Comment out or Uncomment the lines #12-17 based on the data set.
+ - Execute the command in 'models' directory
+> python3 DecisionTree.py
+### FastText
+ - Comment out or Uncomment the lines #7-12 based on the data set.
+ - Execute the command in 'models' directory
+> python3 FastText.py
+### BERT
