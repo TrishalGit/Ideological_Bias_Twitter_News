@@ -1,7 +1,7 @@
 # Understanding the Impact of Ideological Bias on NLP Tasks
 ## Note
  - All the datasets are processed and stored in 'data' folder.
- - The classification models use directly the data from 'data' folder.
+ - The classification models use dataset files from 'data' folder.
  - Follow Dataset Generation steps to regenerate/modify existing dataset.
 
 ## Libraries and Installations
