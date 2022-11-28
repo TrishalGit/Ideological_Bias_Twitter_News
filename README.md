@@ -44,9 +44,9 @@ $ pip install .
  
 ## Model Executions
 ### Naive Bayes & SVM
- - Comment out or Uncomment the lines {15-16, 26-27, 37-40, 112-113, 167-168} based on the data set in 'models/NaiveBayes&SVM.py'.
+ - Comment out or Uncomment the lines {15-16, 26-27, 37-40, 112-113, 167-168} based on the data set in 'models/NaiveBayesandSVM.py'.
  - Execute the command in 'models' directory
-> python3 NaiveBayes&SVM.py
+> python3 NaiveBayesandSVM.py
 ### KNN
  - Comment out or Uncomment the lines #12-17 based on the data set in 'models/KNN.py'.
  - Execute the command in 'models' directory
