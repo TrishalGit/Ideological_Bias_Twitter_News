@@ -3,6 +3,7 @@
  - All the datasets are processed and stored in 'data' folder.
  - The classification models use dataset files from 'data' folder.
  - Follow Dataset Generation steps to regenerate/modify existing dataset.
+ - File paths are currently hardcoded in the files. Will try to add some automation in future.
 
 ## Libraries and Installations
  - We have used Python 3 for execution of all our models except for BERT we used Google Collab for pre-installed tenserflow libraries
@@ -64,3 +65,16 @@ $ pip install .
  - Execute the command in 'models' directory
 > python3 FastText.py
 ### BERT
+ - The BERT model code is split into 3 files inside 'models/BERT' as bert_left.py (train on left data), bert_right.py (train on right data) and bert_neutral.py (train on neutral data)
+ - To execute the file need to run on Google Collab for convenience and pre-existing libraries + GPU support.
+ - Copy 'train_test_split' folder in 'data' to your google drive. The code can pull the dataset from drive.
+ - Open new collab notebook and copy-paste the python code inside the '.py' file one at a time.
+ - Comment out or Uncomment the lines based on the data set to use.
+ - Click 'Runtime' -> 'Run all' to execute the code.
+ - After first time execution the collab will install necessary libraries and tries to mount to Google Drive which the user has to allow for dataset access.
+#### Issues
+ - During first execution you might get this error (No module named 'tensorflow_text') 
+ ![TensorFlowError](https://user-images.githubusercontent.com/96170761/204177888-c1972984-82fd-487b-9410-3ffd63a3c4ef.png)
+ - Please end the current execution and Re-run the code. 
+ - If the issue still persists contact the authors @GayamTrishal or @HirthikMathavan
+
