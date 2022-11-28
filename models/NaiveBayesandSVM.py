@@ -12,7 +12,7 @@ directory = os.getcwd()
 
 """## Train Left"""
 
-#df_left_train = pd.read_csv('/content/drive/MyDrive/NewsDataset/data/train_test_split/Left_Train.csv',header=None)
+#df_left_train = pd.read_csv(directory + '/../data/train_test_split/Left_Train.csv',header=None)
 df_left_train = pd.read_csv(directory + '/../data/train_test_split/Left_Harvard_Train.csv',header=None)
 
 df_left_train
@@ -23,7 +23,7 @@ for index, row in df_left_train.iterrows():
     tweets_ltrain.append(row[0])
     topics_ltrain.append(row[1])
 
-#df_left_test = pd.read_csv('/content/drive/MyDrive/NewsDataset/data/train_test_split/Left_Test.csv',header=None)
+#df_left_test = pd.read_csv(directory + '/../data/train_test_split/Left_Test.csv',header=None)
 df_left_test = pd.read_csv(directory + '/../data/train_test_split/Left_Harvard_Test.csv',header=None)
 
 df_left_test
@@ -34,8 +34,8 @@ for index, row in df_left_test.iterrows():
     tweets_ltest.append(row[0])
     topics_ltest.append(row[1])
 
-#df_right_test = pd.read_csv('/content/drive/MyDrive/NewsDataset/data/train_test_split/Right_Test.csv',header=None)
-#df_neutral_test = pd.read_csv('/content/drive/MyDrive/NewsDataset/data/train_test_split/Neutral_Test.csv',header=None)
+#df_right_test = pd.read_csv(directory + '/../data/train_test_split/Right_Test.csv',header=None)
+#df_neutral_test = pd.read_csv(directory + '/../data/train_test_split/Neutral_Test.csv',header=None)
 df_right_test = pd.read_csv(directory + '/../data/train_test_split/Right_Harvard_Test.csv',header=None)
 df_neutral_test = pd.read_csv(directory + '/../data/train_test_split/Neutral_Harvard_Test.csv',header=None)
 
@@ -109,7 +109,7 @@ print("SVM F1 Score -> ",f1_score(predictions_SVM, N_Test_Y))
 
 """## Train right"""
 
-#df_right_train = pd.read_csv('/content/drive/MyDrive/NewsDataset/data/train_test_split/Right_Train.csv',header=None)
+#df_right_train = pd.read_csv(directory + '/../data/train_test_split/Right_Train.csv',header=None)
 df_right_train = pd.read_csv(directory + '/../data/train_test_split/Right_Harvard_Train.csv',header=None)
 
 tweets_rtrain = []
@@ -164,7 +164,7 @@ print("SVM F1 Score -> ",f1_score(predictions_SVM, N_Test_Y))
 
 """## Train on Neutral"""
 
-#df_neutral_train = pd.read_csv('/content/drive/MyDrive/NewsDataset/data/train_test_split/Neutral_Train.csv',header=None)
+#df_neutral_train = pd.read_csv(directory + '/../data/train_test_split/Neutral_Train.csv',header=None)
 df_neutral_train = pd.read_csv(directory + '/../data/train_test_split/Neutral_Harvard_Train.csv',header=None)
 
 tweets_ntrain = []
