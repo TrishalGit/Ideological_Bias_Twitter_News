@@ -43,22 +43,24 @@ $ pip install .
  - This will generate 12 files (6 on each execution based on dataset) in 'data/fasttext' directory: Left_Train.train, Left_Test.test, Right_Train.train, Right_Test.test, Neutral_Train.train, Neutral_Test.test, Left_Harvard_Train.train, Left_Harvard_Test.test, Right_Harvard_Train.train, Right_Harvard_Test.test, Neutral_Harvard_Train.train, and Neutral_Harvard_Test.test.
  
 ## Model Executions
-### Naive Bayes
-### SVM
+### Naive Bayes & SVM
+ - Comment out or Uncomment the lines {15-16, 26-27, 37-40, 112-113, 167-168} based on the data set in 'models/NaiveBayes&SVM.py'.
+ - Execute the command in 'models' directory
+> python3 NaiveBayes&SVM.py
 ### KNN
  - Comment out or Uncomment the lines #12-17 based on the data set in 'models/KNN.py'.
  - Execute the command in 'models' directory
 > python3 KNN.py
 ### Random Forest
- - Comment out or Uncomment the lines #12-17 based on the data set.
+ - Comment out or Uncomment the lines #12-17 based on the data set in 'models/RandomForest.py'.
  - Execute the command in 'models' directory
 > python3 RandomForest.py
 ### Decision Tree
- - Comment out or Uncomment the lines #12-17 based on the data set.
+ - Comment out or Uncomment the lines #12-17 based on the data set in 'models/DecisionTree.py'.
  - Execute the command in 'models' directory
 > python3 DecisionTree.py
 ### FastText
- - Comment out or Uncomment the lines #7-12 based on the data set.
+ - Comment out or Uncomment the lines #7-12 based on the data set in 'models/FastText.py'.
  - Execute the command in 'models' directory
 > python3 FastText.py
 ### BERT
