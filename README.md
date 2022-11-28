@@ -1,4 +1,9 @@
 # Understanding the Impact of Ideological Bias on NLP Tasks
+## Directory Structure
+ - data (contains all the processed data files)
+ - data_parser (contains code files for dataset generation)
+ - models (contains model code files)
+
 ## Note
  - All the datasets are processed and stored in 'data' folder.
  - The classification models use dataset files from 'data' folder.
