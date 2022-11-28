@@ -77,6 +77,7 @@ $ pip install .
  - Comment out or Uncomment the lines based on the data set to use.
  - Click 'Runtime' -> 'Run all' to execute the code.
  - After first time execution the collab will install necessary libraries and tries to mount to Google Drive which the user has to allow for dataset access.
+ - The code executions might take 40min to 1hr 30min.
 #### Issues
  - During first execution you might get this error (No module named 'tensorflow_text') 
  ![TensorFlowError](https://user-images.githubusercontent.com/96170761/204177888-c1972984-82fd-487b-9410-3ffd63a3c4ef.png)
