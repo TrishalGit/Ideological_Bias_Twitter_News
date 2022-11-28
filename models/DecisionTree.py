@@ -9,8 +9,12 @@ import csv
 
 directory = os.getcwd()
 
-train_filenames = ['Left_Train', 'Right_Train', 'Neutral_Train']
-test_filenames = ['Left_Test', 'Right_Test', 'Neutral_Test']
+#train_filenames = ['Left_Train', 'Right_Train', 'Neutral_Train']
+#test_filenames = ['Left_Test', 'Right_Test', 'Neutral_Test']
+
+# Comment the above lines and uncomment the below to run code on Harvard Dataset
+train_filenames = ['Left_Harvard_Train', 'Right_Harvard_Train', 'Neutral_Harvard_Train']
+test_filenames = ['Left_Harvard_Test', 'Right_Harvard_Test', 'Neutral_Harvard_Test']
 
 train_data = []
 test_data = []
@@ -20,7 +24,7 @@ test_labels = []
 for i in range(len(train_filenames)):
     data = []
     labels = []
-    with open(directory + '/Ideological_Bias_Twitter_News/data/train_test_split/' + train_filenames[i] + '.csv', 'r') as file:
+    with open(directory + '/../data/train_test_split/' + train_filenames[i] + '.csv', 'r') as file:
         csvFile = csv.reader(file, delimiter=",")
         for lines in csvFile:
             data.append(lines[0])
@@ -31,7 +35,7 @@ for i in range(len(train_filenames)):
     
     data = []
     labels = []
-    with open(directory + '/Ideological_Bias_Twitter_News/data/train_test_split/' + test_filenames[i] + '.csv', 'r') as file:
+    with open(directory + '/../data/train_test_split/' + test_filenames[i] + '.csv', 'r') as file:
         csvFile = csv.reader(file, delimiter=",")
         for lines in csvFile:
             data.append(lines[0])
@@ -52,4 +56,4 @@ for i in range(len(train_filenames)):
         predicted = text_clf.predict(test_data[j])
 
         print('Decision Tree Accuracy Score for ' + train_filenames[i] + ' and ' + test_filenames[j] + ' -> ',accuracy_score(predicted, test_labels[j])*100)
-        print('Decision Tree F1 Score for ' + train_filenames[i] + ' and ' + test_filenames[j] + ' -> ', f1_score(predicted, test_labels[j], pos_label="politics")*100)
+        print('Decision Tree F1 Score for ' + train_filenames[i] + ' and ' + test_filenames[j] + ' -> ', f1_score(predicted, test_labels[j], pos_label="politics"))
