@@ -9,6 +9,7 @@
  - The classification models use dataset files from 'data' folder.
  - Follow Dataset Generation steps to regenerate/modify existing dataset.
  - File paths are currently hardcoded in the files. Will try to add some automation in future.
+ - Added for testing.
 
 ## Libraries and Installations
  - We have used Python 3 for execution of all our models except for BERT we used Google Collab for pre-installed tenserflow libraries
